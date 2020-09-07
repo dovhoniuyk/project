@@ -737,18 +737,18 @@ header .iphone_1 {
 
 .card-columns {
   margin-top: 71px;
+  margin-bottom: 2px;
 }
 
 .card-columns .card {
   padding-left: 0 !important;
   padding-right: 0 !important;
-  max-width: 271px;
+  max-width: 280px;
   max-height: 478px;
 }
 
 .card-columns .card-body {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+  padding: 0px 0px !important;
 }
 
 .card-columns .card-body .card-title {
@@ -758,10 +758,10 @@ header .iphone_1 {
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
-  padding: 10px 0px;
+  padding: 25px 0px;
+  margin-bottom: 0;
   text-align: center;
   border-bottom: 1px solid #e3e3e3;
-  margin-bottom: 0px;
 }
 
 .card-columns .card-body .card-money {
@@ -770,7 +770,8 @@ header .iphone_1 {
   font-size: 60px;
   font-weight: 600;
   line-height: 20px;
-  padding: 55px 0;
+  padding-top: 50px;
+  padding-bottom: 45px;
   text-align: center;
   width: 100%;
   border-bottom: 1px solid #e3e3e3;
@@ -797,7 +798,7 @@ header .iphone_1 {
   font-weight: 400;
   line-height: 26px;
   text-align: center;
-  padding: 22px 36px;
+  padding: 32px 36px 25px;
 }
 
 .card-columns .card-body .card-text span {
@@ -812,7 +813,7 @@ header .iphone_1 {
   text-transform: uppercase;
   color: #008ed6;
   letter-spacing: 0.5px;
-  margin: 15px auto;
+  margin: 0px auto 25px;
   width: 160px;
   height: 50px;
   border: 1px solid #e0e0e0;
@@ -926,6 +927,10 @@ header .iphone_1 {
 .form_row form {
   padding-right: 20px;
   margin-top: 17px;
+}
+
+.form_row .div_wrap {
+  margin-left: 50px;
 }
 
 .form_row .form-group {
@@ -1248,11 +1253,6 @@ header .iphone_1 {
     padding-left: 40px;
   }
 
-  .buttons {
-    padding-right: 40px;
-    margin-top: 40px;
-  }
-
   .card-columns {
     padding: 0px 30px;
   }
@@ -1263,11 +1263,6 @@ header .iphone_1 {
 
   .contact__item #envelope {
     padding-bottom: 10px !important;
-  }
-
-  .form-control {
-    max-width: 250px;
-    margin-left: 10px;
   }
 
   .contact {
@@ -1406,7 +1401,6 @@ header .iphone_1 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-left: 30px !important;
   }
 
   .form {
@@ -1572,7 +1566,7 @@ header .iphone_1 {
   }
 
   .div_wrap {
-    padding-left: 20px !important;
+    margin: 0px auto !important;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1586,6 +1580,10 @@ header .iphone_1 {
   .form {
     max-width: 250px !important;
     margin: 0px auto 20px !important;
+  }
+
+  form {
+    padding-right: 0px !important;
   }
 
   .form_row {

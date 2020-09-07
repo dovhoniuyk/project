@@ -454,16 +454,17 @@ header {
     /* Styles for block with cards */
 .card-columns {
     margin-top: 71px;
+    margin-bottom: 2px;
 
     .card {
         padding-left: 0 !important;
         padding-right: 0 !important;
-        max-width: 271px;
+        max-width: 280px;
         max-height: 478px;
+        
     }
     .card-body {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
+        padding: 0px 0px !important; 
         
         .card-title {
             color: $btn;
@@ -472,10 +473,11 @@ header {
             font-weight: 700;
             line-height: 20px;
             text-transform: uppercase;
-            padding: 10px 0px;
+            padding: 25px 0px;
+            margin-bottom: 0;
             text-align: center;
             border-bottom: 1px solid $card_border;
-            margin-bottom: 0px;
+            
         }
         .card-money {
             color: $btn;
@@ -483,7 +485,8 @@ header {
             font-size: $main_size + 44;
             font-weight: 600;
             line-height: 20px;
-            padding: 55px 0;
+            padding-top: 50px;
+            padding-bottom: 45px;
             text-align: center;
             width: 100%;
             border-bottom: 1px solid $card_border;
@@ -507,7 +510,8 @@ header {
             font-weight: 400;
             line-height: 26px;
             text-align: center;
-            padding: 22px 36px;
+            padding: 32px 36px 25px;
+            
             span {
                 color: $secondary_text;
             }    
@@ -515,7 +519,8 @@ header {
         .card-intro{
             @include intro;
             letter-spacing: 0.5px;
-            margin: 15px auto ;
+            margin: 0px auto 25px;
+            
             width: 160px;
             height: 50px;
             border: 1px solid $card_intro;
@@ -603,6 +608,9 @@ header {
     form {
         padding-right: 20px;
         margin-top: 17px;
+    }
+    .div_wrap {
+        margin-left: 50px;
     }
     .form-group {
         margin-bottom: 20px;
