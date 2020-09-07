@@ -42,7 +42,6 @@
         padding-right: 20px;
     }
     .card-columns {
-        
         padding:0px 30px;
     }
 }
@@ -54,21 +53,16 @@
     .logo {
         margin-left: 40px;
     }
-    
     .iphone_1 {
-        
         img {
             display: none;
         }
-        
-        
      }
      .offer {
        text-align: center;
        .offer__title {
            font-size: 36px !important;
        }
-
     }
     .iphone_2 {
         display: none;
@@ -116,9 +110,7 @@
     .text {
         padding-left: 40px;
     }
-   
     .card-columns {
-        
         padding:0px 30px;
     }
     .contact__item {
@@ -127,12 +119,9 @@
             padding-bottom: 10px !important;
         }
     }
-
-    
     .contact {
         height: 100%;
     }
-    
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -147,10 +136,8 @@
     }
     .nav-item {
         padding: 10px 0px;
-         
     }
     .nav-link {
-            
             &:hover {
                 &::before {
                     content: ' ';
@@ -161,23 +148,18 @@
                     display: none;
                 }
             }
-            
         }
     
     .iphone_1 {
-        
         img {
             display: none;
         }
-        
-        
      }
      .offer {
        text-align: center;
        .offer__title {
            font-size: 36px !important;
        }
-
     }
     .iphone_2 {
         display: none;
@@ -245,22 +227,15 @@
     .div_wrap {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        
-        
-        
+        justify-content: center; 
     }
     .form {
         margin: 0px auto 20px !important;
     }
-    
-    
     .form_row {
         height: 100%;
         width: 100%;
         padding-bottom: 10px;
-        
-       
     }
     .form__input {
         padding-right: 0px !important;
@@ -282,7 +257,6 @@
     }
     .nav-item {
         padding: 10px 0px;
-         
     }
     .nav-link {
             
@@ -298,14 +272,10 @@
             }
             
         }
-    
-    .iphone_1 {
-        
+    .iphone_1 { 
         img {
             display: none;
         }
-        
-        
      }
      .offer {
         text-align: center;
@@ -319,8 +289,6 @@
             margin-left: 0px !important;
         }
     }
-   
-    
     .iphone_2 {
         display: none;
     }
@@ -383,7 +351,7 @@
     }
     .contact__item {
         margin-bottom: 30px;
-        #envelope {
+            #envelope {
             padding-bottom: 10px !important;
         }
     }
@@ -395,13 +363,10 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        
     }
     .form {
         max-width: 250px !important;
         margin: 0px auto 20px !important;
-        
-
     }
     form {
         padding-right: 0px !important;
@@ -410,13 +375,9 @@
         height: 100%;
         padding-bottom: 10px;
         max-width: 250px !important;
-        
-       
     }
     .form__input {
         padding-right: 0px !important;
-        
-        
     }
     .form-group {
         input {
