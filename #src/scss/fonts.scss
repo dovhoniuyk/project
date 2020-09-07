@@ -1,0 +1,15 @@
+@include font("Quicksand-VariableFont_wght", "Quicksand-VariableFont_wght", "400", "normal");
+@include font("SourceSansPro-Regular", "SourceSansPro-Regular", "400", "normal");
+@include font("SourceSansPro-Italic", "SourceSansPro-Italic", "400", "normal");
+@include font("SourceSansPro-SemiBold", "SourceSansPro-SemiBold", "600", "normal");
+@include font("SourceSansPro-Light", "SourceSansPro-Light", "300", "normal");
+
+/* Variables for fonts */
+$main_font: "SourceSansPro-Regular", "Source Sans Pro", sans-serif;
+$semibold_font: "SourceSansPro-SemiBold", "Source Sans Pro", sans-serif;
+$italic_font: "SourceSansPro-Italic", "Source Sans Pro", sans-serif;
+$logo_font: "Quicksand-VariableFont_wght", "Quicksand Variable Font", sans-serif;
+$light_font: "SourceSansPro-Light", "Source Sans Pro", sans-serif;
+
+
+

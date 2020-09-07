@@ -1,0 +1,444 @@
+@media (min-width: 992px) and (max-width: 1199px) {
+    .logo {
+        margin-left: 20px;
+    }
+    .iphone_1 {
+        img {
+            max-width: 400px !important;
+            max-height: 400px !important;
+            margin-top: 123px;
+        }
+     }
+     .offer {
+       margin-left: 20px;
+    }
+    .iphone_2 {
+        img {
+            max-width: 450px !important;
+            max-height: 450px !important;
+            margin-bottom: 63px;
+        }
+    }   
+    .device {
+        margin-left: 60px;
+    }
+    .detail {
+        margin-left: 40px;
+        margin-top: 20px !important;
+    }
+    .iphone5 {
+        img {
+            max-width: 500px !important;
+            max-height: 500px !important;
+        }
+    }
+    .slider_block {
+        padding: 0px 20px;
+    }
+    .text {
+        padding-left: 20px;
+    }
+    .buttons {
+        padding-right: 20px;
+    }
+    .card-columns {
+        
+        padding:0px 30px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    header {
+        min-height: 532px;
+    }
+    .logo {
+        margin-left: 40px;
+    }
+    
+    .iphone_1 {
+        
+        img {
+            display: none;
+        }
+        
+        
+     }
+     .offer {
+       text-align: center;
+       .offer__title {
+           font-size: 36px !important;
+       }
+
+    }
+    .iphone_2 {
+        display: none;
+    }
+    .iphone5 {
+        display: none;
+    }
+    .device {
+        margin-top: 40px;
+        text-align: center;
+        .my_border {
+            justify-content: center;
+        }
+        .device__text {
+            padding: 0px 80px;
+        }
+    }
+    .device__icons {
+        margin-left: 85px;
+    }
+    .feature {
+        margin-top: 36px;
+        margin-bottom: 10px;
+        padding: 0 20px;
+    }
+    .details {
+        margin-bottom: 20px;
+        text-align: center;
+        .detail {
+            margin-top: 0px;
+        }
+        .my_border {
+            justify-content: center;
+        }
+        .detail__text {
+            padding: 0px 80px;            
+        }
+    }
+    .slider_block {
+        padding: 0px 40px;
+    }
+    .slider__items {
+        margin-bottom: 20px !important;
+    }
+    .text {
+        padding-left: 40px;
+    }
+    .buttons {
+        padding-right: 40px;
+        margin-top: 40px;
+    }
+    .card-columns {
+        
+        padding:0px 30px;
+    }
+    .contact__item {
+        margin-bottom: 30px;
+        #envelope {
+            padding-bottom: 10px !important;
+        }
+    }
+    .form-control {
+        max-width: 250px;
+        margin-left: 10px;
+    }
+    
+    .contact {
+        height: 100%;
+    }
+    
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    header {
+        min-height: 532px;
+    }
+    .logo {
+        margin-left: 40px;
+    }
+    .navbar-toggler {
+        margin-left: 50px;
+    }
+    .nav-item {
+        padding: 10px 0px;
+         
+    }
+    .nav-link {
+            
+            &:hover {
+                &::before {
+                    content: ' ';
+                    display: none;         
+                }
+                &::after {
+                    content: ' ';
+                    display: none;
+                }
+            }
+            
+        }
+    
+    .iphone_1 {
+        
+        img {
+            display: none;
+        }
+        
+        
+     }
+     .offer {
+       text-align: center;
+       .offer__title {
+           font-size: 36px !important;
+       }
+
+    }
+    .iphone_2 {
+        display: none;
+    }
+    .iphone5 {
+        display: none;
+    }
+    .device {
+        margin-top: 40px;
+        text-align: center;
+        .my_border {
+            justify-content: center;
+        }
+        .device__text {
+            padding: 0px 80px;
+        }
+    }
+    .device__icons {
+        margin-left: 55px;
+    }
+    .feature {
+        margin-top: 36px;
+        margin-bottom: 10px;
+        padding: 0 20px;
+    }
+    .details {
+        
+        text-align: center;
+        .detail {
+            margin-top: 0px;
+        }
+        .my_border {
+            justify-content: center;
+        }
+        .detail__text {
+            padding: 0px 80px;            
+        }
+    }
+    .slider_block {
+        padding: 0px 40px;
+    }
+    .slider__items {
+        margin-bottom: 20px !important;
+    }
+    .text {
+        padding-left: 20px;
+    }
+    .buttons {
+        padding-right: 20px;
+        
+    }
+    .card-columns {
+        
+        padding:0px 10px;
+    }
+    .contact__item {
+        margin-bottom: 30px;
+        #envelope {
+            padding-bottom: 10px !important;
+        }
+    }
+    .contact {
+        height: 100%;
+    }
+    .div_wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 30px !important;
+        
+        
+    }
+    .form {
+        margin: 0px auto 20px !important;
+    }
+    .form_row {
+        height: 100%;
+        width: 100%;
+        padding-bottom: 10px;
+        
+       
+    }
+    .form__input {
+        padding-right: 0px !important;
+    }
+    .buttons {
+        display: flex;
+        justify-content: center !important;
+    }
+}
+@media (min-width: 0px) and (max-width: 575px) {
+    header {
+        min-height: 532px;
+    }
+    .logo {
+        margin-left: 40px;
+    }
+    .navbar-toggler {
+        margin-left: 20px;
+    }
+    .nav-item {
+        padding: 10px 0px;
+         
+    }
+    .nav-link {
+            
+            &:hover {
+                &::before {
+                    content: ' ';
+                    display: none;         
+                }
+                &::after {
+                    content: ' ';
+                    display: none;
+                }
+            }
+            
+        }
+    
+    .iphone_1 {
+        
+        img {
+            display: none;
+        }
+        
+        
+     }
+     .offer {
+        text-align: center;
+       .offer__title {
+           font-size: 26px !important;
+       }
+       .offer__text {
+        padding: 0 5px;
+       }
+        #btn__my {
+            margin-left: 0px !important;
+        }
+    }
+   
+    
+    .iphone_2 {
+        display: none;
+    }
+    .iphone5 {
+        display: none;
+    }
+    .device {
+        margin-top: 40px;
+        text-align: center;
+        .my_border {
+            justify-content: center;
+        }
+        .device__text {
+            padding: 0px 10px;
+        }
+    }
+    .device__icons {
+        margin-left: 10px;
+    }
+    .feature {
+        margin-top: 36px;
+        margin-bottom: 10px;
+        padding: 0 20px;
+    }
+    .details {
+        
+        text-align: center;
+        .detail {
+            margin-top: 0px;
+        }
+        .my_border {
+            justify-content: center;
+        }
+        .detail__text {
+            padding: 0px 10px;            
+        }
+    }
+    .slider__blocks {
+        margin-top: 20px !important;
+    }
+    .slider_block {
+        padding: 0px 40px;
+    }
+    .slider__items {
+        margin-bottom: 20px !important;
+    }
+    .text {
+        padding-left: 20px;
+    }
+    .buttons {
+        padding:10px 10px;
+        
+    }
+    .card-columns {
+        
+        padding:0px 10px;
+    }
+    .card-money {
+        padding: 30px 0px !important;
+    }
+    .contact__item {
+        margin-bottom: 30px;
+        #envelope {
+            padding-bottom: 10px !important;
+        }
+    }
+    .contact {
+        height: 100%;
+    }
+    .div_wrap {
+        padding-left: 20px !important;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+    .form {
+        max-width: 250px !important;
+        margin: 0px auto 20px !important;
+
+    }
+    .form_row {
+        height: 100%;
+        padding-bottom: 10px;
+        max-width: 250px !important;
+        
+       
+    }
+    .form__input {
+        padding-right: 0px !important;
+        
+        
+    }
+    .form-group {
+        input {
+            max-width: 200px !important;
+        }
+    }
+    .form__area {
+        textarea {
+            max-width: 200px !important;
+        }
+        
+    }
+    .buttons {
+        display: flex;
+        justify-content: center !important;
+    }
+}
+
+
+@media  (max-width: 767px) {
+    .form {
+        max-width: 400px !important;
+        margin: 0 auto !important;
+    }
+}

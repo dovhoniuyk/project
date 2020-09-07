@@ -1,0 +1,764 @@
+/* Mixin for compiling fonts */
+@mixin font($font_name, $file_name, $weight, $style) {
+    @font-face {
+        font-family: $font_name;
+        font-display: swap;
+        src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+        font-weight: #{$weight};
+        font-style: #{$style};
+    }
+}
+
+@import "fonts";
+@import "colors";
+@import "reset";
+@import "mixin";
+@import "media";
+
+
+
+
+/* Styles for block "container" */
+.container {
+    max-width: 1170px;
+    padding: 0 0 !important;
+    margin: 0 auto;
+    box-sizing: border-box;
+    
+}
+.wrapper {
+    overflow-x: hidden;
+}
+/* Styles for header */
+header {
+    
+    background-image: url(../img/photo.png);
+    background-color: #15141a;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 640px;
+    
+    .navbar {
+        padding: 0px 0px 0px 0px !important;        
+        
+        .logo {
+            padding: 40px 0px 0px 0px !important;
+            h6 {
+            color: $logo;
+            font-family: $main_font;
+            font-size: $main_size - 7;
+            line-height: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1.26px;
+            opacity: 0.3;
+            padding-left: 8px;
+        }
+    }
+    /* Styles for menu */
+        .navbar-nav {
+            list-style-type: none;
+            padding-top: 8px;
+            margin-left: 26px;
+            .nav-item {
+                padding-right: 23px;
+                .nav-link {
+                    color: $menu;
+                    font-family: $semibold_font;
+                    font-size: $main_size;
+                    font-weight: 400;
+                    padding: 0 0 !important;
+                    position: relative;
+                        &:hover {
+                            &::before {
+                                content: ' ';
+                                position: absolute; 
+                                bottom: -13px;
+                                left: 0;
+                                height: 2px;
+                                width: 48%;   
+                                background-color: $secondary_text;  
+                                                
+                                
+                            }
+                            &::after {
+                                content: ' ';
+                                position: absolute; 
+                                bottom: -13px;
+                                right: 0;
+                                height: 2px;
+                                width: 48%;   
+                                background-color: $secondary_text;  
+                            }
+                        }
+                        
+                    }
+                }
+                
+            }
+        }
+    /* Styles for block with information about theme */        
+    .offer {
+        .offer__intro {
+            @include intro;
+            margin-top: 89px;
+        }
+        .offer__title {
+            color: $menu;
+            font-family: $semibold_font;
+            font-size: $main_size + 32;
+            line-height: 48px;
+            margin-bottom: 25px;
+            margin-top: 23px;
+        }
+        .offer__text {
+            @include text;
+        }
+        /* Styles for buttons */
+        .btn {
+            width: 160px;
+            height: 50px;
+            box-shadow: 0 0 3px rgba(3, 3, 3, 0.1);
+            margin-top: 45px;
+            background-color: rgba(21, 20, 26, 0);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            &:hover {
+                background-color: $secondary_text;
+            }
+        }
+        .btn-primary {
+            color: #ffffff;
+            font-family: $main_font;
+            font-size: $main_size - 2;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.2px;
+        }
+        #btn__my {
+            margin-left: 15px;
+            background-color: rgba(21, 20, 26, 0);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            &:hover {
+                background-color: $secondary_text;
+            }
+        }
+    }
+    .iphone_1 {
+        margin-top: 50px;
+        margin-left: 80px;
+        
+    }
+}
+
+.title {
+    text-align: center;
+
+    .title__intro {
+        @include intro;
+        padding-top: 62px;
+    }
+    .title__main {
+        @include title;
+    }
+    /* Styles for the border which is under the title */
+    .my_border {
+        display: flex;
+        justify-content: center;
+        padding-top: 25px;
+        .border_r {
+            width: 20px;
+            height: 2px;
+            background-color: $secondary_text;
+            margin-right: 2px;
+        }
+        .border_l {
+            width: 20px;
+            height: 2px;
+            background-color: $secondary_text;
+        }
+    }
+}
+    /* Styles for block with amazing features */
+.feature {
+    margin-top: 73px;
+    text-align: center;
+    .feature__title {
+        color: $btn;
+        font-size: $main_size + 8;
+        line-height: 36px;
+        font-weight: 400;
+        font-family: $main_font;
+        margin-top: 25px;
+    }
+    .feature__text {
+        @include text;
+    }
+}
+
+.iphone_2 {
+    margin-top: 125px;
+    margin-left: 20px;
+}
+
+/* Styles for block about details of devices */
+.device {
+    .device__intro {
+        @include intro;
+        padding-top: 10px;
+    }
+    .device__title {
+        @include title;
+        padding-top: 10px;
+    }
+    .device__text {
+        @include text;
+    }
+    /* Styles for the border which is under the title */
+    .my_border {
+        display: flex;
+        margin-top: 21px;
+        margin-bottom: 25px;
+
+        .border_r {
+            width: 20px;
+            height: 2px;
+            background-color: $secondary_text;
+            margin-right: 2px;
+        }
+        .border_l {
+            width: 20px;
+            height: 2px;
+            background-color: $secondary_text;
+        }
+    }
+    .device__icons {
+        margin-top: 25px;
+
+        .icons__items {
+            display: block;
+            list-style-type: none;
+        }
+        li {
+            color: $device_text;
+            font-family: $main_font;
+            font-size: $main_size + 2;
+            font-weight: 400;
+            align-items: center;
+            display: flex;
+            padding: 9px 0px;
+        }
+        img {
+            margin-right: 12px;
+            width: 12px;
+            height: 14px;
+        }
+    }
+}
+    /* Styles for block about details customize */
+.details {
+    background: $background;
+    margin-top: 19px;
+    padding-bottom: 18px;
+    .detail {
+        margin-top: 100px;
+        .detail__intro {
+            @include intro;
+            padding-top: 28px;
+        }
+        .detail__title {
+            @include title;
+            padding: 10px 0px 24px;
+        }
+    /* Styles for the border which is under the title */
+        .my_border {
+            display: flex;
+            padding-bottom: 23px;
+            .border_r {
+                width: 20px;
+                height: 2px;
+                background-color: $secondary_text;
+                margin-right: 2px;
+            }
+            .border_l {
+                width: 20px;
+                height: 2px;
+                background-color: $secondary_text;
+            }
+        }
+        .detail__text {
+            @include text;
+        }        
+    }
+}
+.iphone5 {
+    margin-top: 33px;
+    margin-left: -29px;
+}
+    /* Styles for block with price */
+.price {
+    background-image: url(../img/Warstwa_8.png);
+    background-color: $price_background;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 640px;
+    
+    .prices {
+        text-align: center;
+        margin-top: 63px;
+        .prices__intro {
+            @include intro;
+        }
+        .prices__title {
+            @include title;
+            color: $logo;
+            padding: 8px 0px;
+        }
+    /* Styles for the border which is under the title */
+        .my_border {
+            display: flex;
+            justify-content: center;
+            padding-top: 17px;;
+            .border_r {
+                width: 20px;
+                height: 2px;
+                background-color: $secondary_text;
+                margin-right: 2px;
+            }
+            .border_l {
+                width: 20px;
+                height: 2px;
+                background-color: $secondary_text;
+            }
+        }
+    }
+}
+    /* Styler for slider */
+.slider__blocks {
+    display: flex;
+    margin-top: 88px;
+    .slider__items {
+        margin-bottom: 135px;
+        .slider__text {
+            color: $logo;
+            font-family: $italic_font;
+            font-size: $main_size + 8;
+            font-weight: 400;
+            line-height: 32px;
+        }
+        .slider__signature {
+            display: flex;
+            align-items: center;
+            padding-top: 22px;            
+            .slider__info {
+                display: block;
+                margin-left: 24px;
+            }
+            .slider__name {
+                color: $logo;
+                font-family: $main_font;
+                font-size: $main_size;
+                font-weight: 400;
+                padding-top: 4px;
+                
+            }
+            .slider__job {
+                font-family: $main_font;
+                font-weight: 700;
+                line-height: 26px;
+                color: $logo;
+                margin-top: 8px;
+            }
+        }
+    }
+}
+    /* Styles for block about getting theme */
+.see {
+    background-color: $price_background;
+    min-height: 170px;
+    .text {
+        h2 {
+            color: $see_text;
+            font-family: $light_font;
+            font-size: $main_size + 20;
+            font-weight: 300;
+            line-height: 48px;
+            span {
+            color: $logo;
+            font-family: $semibold_font;
+            font-size: $main_size + 20;
+            font-weight: 400;
+            line-height: 48px;
+            padding-right: 8px;
+            }
+        }
+    }
+    /* Styles for buttons */
+    .btn {
+        width: 160px;
+        height: 50px;
+        box-shadow: 0 0 3px rgba(3, 3, 3, 0.1);
+        margin-top: 2px;
+        background-color: rgba(21, 20, 26, 0);
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        &:hover {
+            background-color: $secondary_text;
+        }
+    }
+    .btn-primary {
+        color: $logo;
+        font-family: $main_font;
+        font-size: $main_size - 2;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.2px;
+        
+    }
+    #btn__my {
+        background-color: rgba(21, 20, 26, 0);
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        margin-right: 20px;
+        &:hover {
+            background-color: $secondary_text;
+        }
+    }
+}
+    /* Styles for block about pricings and plans */
+.plans {
+    margin-top: 60px;
+    text-align: center;
+    
+    .plans__intro {
+        @include intro;
+    }
+    .plans__title {
+        @include title;
+        padding-top: 8px;
+    }
+    /* Styles for the border which is under the title */
+    .my_border {
+        display: flex;
+        justify-content: center;
+        padding-top: 25px;
+        .border_r {
+            width: 20px;
+            height: 2px;
+            background-color: $secondary_text;
+            margin-right: 2px;
+        }
+        .border_l {
+            width: 20px;
+            height: 2px;
+            background-color: $secondary_text;
+        }
+    }
+}
+    /* Styles for block with cards */
+.card-columns {
+    margin-top: 71px;
+
+    .card {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        max-width: 271px;
+        max-height: 478px;
+    }
+    .card-body {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        
+        .card-title {
+            color: $btn;
+            font-family: $main_font;
+            font-size: $main_size + 8;
+            font-weight: 700;
+            line-height: 20px;
+            text-transform: uppercase;
+            padding: 10px 0px;
+            text-align: center;
+            border-bottom: 1px solid $card_border;
+            margin-bottom: 0px;
+        }
+        .card-money {
+            color: $btn;
+            font-family: $semibold_font;
+            font-size: $main_size + 44;
+            font-weight: 600;
+            line-height: 20px;
+            padding: 55px 0;
+            text-align: center;
+            width: 100%;
+            border-bottom: 1px solid $card_border;
+            &::before {
+                content: '$';
+                position: relative;
+                top: -17px;
+                left: 0;
+                font-size: $main_size + 12;
+            }
+            span {
+                font-family: $light_font;
+                font-size: $main_size + 2;
+                color: $span_color;
+            }     
+        }
+        .card-text {
+            color: $main_text;
+            font-family: $main_font;
+            font-size: $main_size + 2;
+            font-weight: 400;
+            line-height: 26px;
+            text-align: center;
+            padding: 22px 36px;
+            span {
+                color: $secondary_text;
+            }    
+        }
+        .card-intro{
+            @include intro;
+            letter-spacing: 0.5px;
+            margin: 15px auto ;
+            width: 160px;
+            height: 50px;
+            border: 1px solid $card_intro;
+        }
+        &:hover {
+            cursor: pointer;
+            .card-title {
+                color: $secondary_text;
+            }
+            .card-money {
+                color: $logo;
+                background-color: $secondary_text;
+            }
+            .card-intro {
+                color: $logo;
+                background-color: $secondary_text;
+            }
+        }
+    }
+
+}
+    /* Styles for block with contact */
+.contact {
+    text-align: center;
+    margin-top: 60px;
+    background-color: $contact_background;
+    padding-top: 60px;
+    width: 100%;
+    height: 650px;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    .contact__intro {
+        @include intro;
+    }
+    .contact__title {
+        @include title;
+        padding-top: 8px;
+    }
+    /* Styles for the border which is under the title */
+    .my_border {
+        display: flex;
+        justify-content: center;
+        padding-top: 25px;
+        .border_r {
+            width: 20px;
+            height: 2px;
+            background-color: $secondary_text;
+            margin-right: 2px;
+        }
+        .border_l {
+            width: 20px;
+            height: 2px;
+            background-color: $secondary_text;
+        }
+}
+}
+
+.contact__items {
+    margin-top: 60px;
+    .contact__item {
+        
+        img {
+            padding-bottom: 25px;
+        }
+        h5 {
+        color: $main_text;
+        font-family: $main_font;
+        font-size: $main_size +2;
+        font-weight: 400;
+        line-height: 26px;
+        }
+        #envelope {
+            padding-bottom: 35px;
+        }
+    }
+}
+    /* Styles for block with contact form */
+.form_row {
+    position: relative;
+    z-index: 10;
+    margin-top: 63px;
+    width: 770px;
+    height: 360px;
+    background-color: $form_background;
+    form {
+        padding-right: 20px;
+        margin-top: 17px;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    .form__input {
+        padding-right: 19px;
+        .form-control {
+            background-color: $form_background;
+            padding-left: 17px;
+            color: $logo;
+            font-family: $main_font;
+            font-size: $main_size - 2;
+            font-weight: 700;
+            line-height: 48px;
+            text-transform: uppercase;
+            width: 300px;
+            height: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    }
+    .area {
+        padding-left: 20px;
+        color: $logo;
+        font-family: $main_font;
+        font-size: $main_size - 2;
+        font-weight: 700;
+        line-height: 48px;
+        text-transform: uppercase;
+        background-color: $form_background;    
+        width: 300px;
+        height: 190px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    textarea[name="message"] { 
+        resize: none; 
+    } 
+    /* Styles for button */
+    .btn {
+        width: 160px;
+        height: 50px;
+        box-shadow: 0 0 3px rgba(3, 3, 3, 0.1);
+        background-color: $secondary_text;
+        
+    }
+    .btn-primary {
+        color: #ffffff;
+        font-family: $main_font;
+        font-size: $main_size - 2;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.2px;
+        margin-top: 21px;
+        
+    }
+}
+/* Styles for footer */
+.page-footer {
+    background-color: $form_background;
+    min-height: 160px;
+    .footer__icons {
+        margin-top: 37px;
+        margin-left: 28px;
+        .icon__item {
+        padding-right: 25px;    
+        }
+        
+    }
+}
+.fab {
+    color: $fab_color;
+    font-size: $main_size + 2;
+    padding-right: 11px;
+    &:hover {
+        color: $secondary_text;
+    }
+    .fa-linkedin-in {
+        padding-right: -11px;
+    }
+    
+}
+.footer__intro {
+    padding: 8px 0px;
+    a {
+    color: $fab_color;
+    font-family: $semibold_font;
+    font-size: $main_size - 2;
+    font-weight: 400;
+    line-height: 48px;
+    text-transform: uppercase;
+    }
+}
+
+
+
+
+/* Styles for slider dots */
+.slick-dots li button:before {
+    font-family: "slick";
+    font-size: $main_size;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: "•"; 
+    text-align: center;
+    color: $logo;
+}
+
+/* Styles for navbar(hamburger) */
+.navbar {
+    
+    transition: all .6s;
+    backface-visibility: hidden;
+    
+}
+.navbar-dark .navbar-toggler {
+    margin-top: -9px;
+    
+} 
+.navbar-dark .navbar-toggler:focus {
+    background: none;
+    outline: 0;
+}
+.navbar-dark .navbar-toggler span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    margin: 6px auto;
+    background: $logo;
+    transition: all .6s cubic-bezier(0.250, 0.100, 0.250, 1.000);
+}
+/* rotate first span */
+.navbar-dark .navbar-toggler[aria-expanded="true"] span:first-of-type {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+/* hide second span */
+.navbar-dark .navbar-toggler[aria-expanded="true"] span:nth-of-type(2) {
+    opacity: 0;
+}
+/* rotate third span */
+.navbar-dark .navbar-toggler[aria-expanded="true"] span:last-of-type {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+.navbar-dark .navbar-toggler[aria-expanded="false"] span {
+    transform: none;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
